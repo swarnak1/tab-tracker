@@ -13,7 +13,7 @@ const sequelize = new Sequelize(
 
 fs
   .readdirSync(__dirname)
-  .filter((file) =>
+  .filter((file) => 
     file !== 'index.js'
   )
   .forEach((file) => {
@@ -22,6 +22,6 @@ fs
   })
 
 db.sequelize = sequelize
-db.sequelize = sequelize
+db.Sequelize = Sequelize
 
 module.exports = db

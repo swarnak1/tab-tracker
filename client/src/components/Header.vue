@@ -51,6 +51,7 @@ export default {
 .home {
   cursor: pointer;
 }
+
 .home:hover {
   color: #E9E;
 }
