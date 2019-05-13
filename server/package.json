@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/app.js",
+    "start": "./node_modules/nodemon/bin/nodemon.js src/app.js --exec 'npm run lint && node'",
     "lint": "./node_modules/.bin/eslint **/*.js"
   },
   "keywords": [],
@@ -20,7 +20,7 @@
     "jsonwebtoken": "^8.0.0",
     "morgan": "^1.8.2",
     "sequelize": "^4.8.0",
-    "sqlite3": "~4.0.6"
+    "sqlite3": "^3.1.8"
   },
   "devDependencies": {
     "eslint-config-standard": "^10.2.1",
